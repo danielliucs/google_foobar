@@ -18,11 +18,11 @@ def solution(n):
 
     steps = 0
     while n > 1:
-        if n % 2 == 0:
+        if n % 2 == 0: #if it's even (the lsb is 0)
             n //= 2
         elif n == 3 or n % 4 == 1: #if the two lsb are 01
             n -= 1
-        else:
+        else: #if the two lsb are 11
             n += 1
         steps += 1
 
